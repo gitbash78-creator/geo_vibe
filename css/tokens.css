@@ -1,0 +1,17 @@
+/* GeoVibe · «За впечатлениями». DESIGN.md и #/brand */
+:root {
+  --ink: #103d4c; --ink-2: #1b5261;
+  --green: #087f63; --brand: #12ad89; --green-hover: #06664f;
+  --mint-light: #e7f3ec; --mist: #f5f7f5; --paper: #fff;
+  --line: #dce5e0; --muted: #60746f;
+  --coral: var(--green); --gold: #d69a28; --mint: var(--green);
+  --line-moscow: #12ad89; --line-spb: #4b85af; --line-kazan: #849a46;
+  --line-kolomna: #8c76b5; --line-suzdal: #c77c64; --lc: var(--green);
+  --f-display: 'Onest', system-ui, sans-serif;
+  --f-body: 'Onest', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --r-s: 8px; --r-m: 12px; --r-l: 20px; --r-xl: 28px; --r-pill: 99px;
+  --s-1: 4px; --s-2: 8px; --s-3: 12px; --s-4: 16px; --s-5: 24px; --s-6: 32px; --s-7: 48px;
+  --sh-pop: 0 12px 32px -12px rgb(16 61 76 / 20%);
+  --ease: cubic-bezier(.2,.8,.2,1); --side: 224px;
+  color-scheme: light;
+}

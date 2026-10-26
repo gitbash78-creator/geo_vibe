@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>GeoVibe — маршруты для прогулок</title>
+  <meta name="description" content="Скажите, как хотите погулять, и GeoVibe соберёт маршрут с учётом времени, бюджета и погоды.">
+  <meta name="theme-color" content="#F5F7F5">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon-v07.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="icons/apple-touch-icon-167-v07.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-touch-icon-152-v07.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="GeoVibe">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/ui.css">
+</head>
+<body>
+  <a class="skip" href="#view">К содержимому</a>
+  <div class="app">
+    <aside class="side" aria-label="Основное меню">
+      <a class="brand" href="#/" aria-label="GeoVibe, на главную">
+        <img src="icons/logo.svg" width="44" height="32" alt="">
+        <span>GeoVibe</span>
+      </a>
+      <p class="brand-caption">Больше маршрутов.<br>Больше впечатлений.</p>
+      <nav id="nav-side" class="nav"></nav>
+      <a class="side-create" href="#/new"><span>+</span>Создать маршрут</a>
+      <div class="side-foot">
+        <button class="install" id="install-side" hidden data-act="install">Установить приложение</button>
+        <a class="brandlink" href="#/brand">Дизайн-система</a>
+        <div class="side-note"><svg viewBox="0 0 100 52" aria-hidden="true"><path d="M2 48 24 18 37 33 62 3 95 45M55 13 63 24 69 16"/></svg><p>Ваш следующий хороший<br>день начинается с прогулки.</p></div>
+      </div>
+    </aside>
+    <div class="workspace"><header class="topbar"><a class="mobile-brand" href="#/"><img src="icons/logo.svg" width="36" height="27" alt=""><b>GeoVibe</b></a><span class="topbar-title">Исследовать</span><div class="topbar-right"><a class="topbar-brand" href="#/brand">О GeoVibe</a><a class="profile-link" href="#/me" aria-label="Открыть профиль"><img class="profile-photo" src="assets/people/anna.jpg" width="32" height="32" alt=""><span>Мой профиль</span></a></div></header><main id="view" tabindex="-1"></main></div>
+  </div>
+  <nav id="nav-tab" class="tabbar" aria-label="Основное меню"></nav>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <aside id="ios-install-banner" class="ios-install-banner" aria-label="Установка приложения" hidden>
+    <img src="icons/apple-touch-icon-v07.png" width="44" height="44" alt="">
+    <div><b>GeoVibe на экране «Домой»</b><span>Ваши прогулки — в одно касание</span></div>
+    <button class="btn ink" data-install="open">Установить</button>
+    <button class="install-dismiss" data-install="dismiss" aria-label="Скрыть предложение установки">×</button>
+  </aside>
+  <dialog id="ios-install-sheet" class="ios-install-sheet" aria-labelledby="ios-install-title" aria-describedby="ios-install-intro">
+    <div class="sheet-handle" aria-hidden="true"></div>
+    <button class="install-sheet-close" data-install="close" aria-label="Закрыть инструкцию">×</button>
+    <img class="install-preview" src="icons/apple-touch-icon-v07.png" width="76" height="76" alt="Иконка GeoVibe: зелёные горы">
+    <h2 id="ios-install-title" tabindex="-1">Добавить на экран «Домой»</h2>
+    <p id="ios-install-intro">Открывайте GeoVibe как приложение — с собственным значком и без адресной строки.</p>
+    <p class="ios-browser-note" hidden>Откройте эту страницу в Safari, затем выполните шаги ниже.</p>
+    <ol class="ios-install-steps">
+      <li><span class="ios-step-icon" aria-hidden="true"><svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M8 7l4-4 4 4M5 12v8h14v-8"/></svg></span><div><b>Нажмите «Поделиться» в Safari</b><p>Значок со стрелкой вверх. В компактном меню сначала нажмите «…».</p></div></li>
+      <li><span class="ios-step-icon" aria-hidden="true">＋</span><div><b>Выберите «На экран “Домой”»</b><p>Прокрутите список действий вниз. Если пункта нет — добавьте его через «Изменить действия».</p></div></li>
+      <li><span class="ios-step-icon" aria-hidden="true">✓</span><div><b>Нажмите «Добавить»</b><p>Оставьте название GeoVibe. Если доступен переключатель «Открывать как веб-приложение», включите его.</p></div></li>
+    </ol>
+    <button class="btn ink block" data-install="close">Понятно</button>
+    <p class="install-sheet-note">Установку завершает системное меню Safari.</p>
+  </dialog>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
