@@ -1,0 +1,67 @@
+{
+  "name": "GeoVibe — маршруты для прогулок",
+  "short_name": "GeoVibe",
+  "description": "Подбор маршрута под время, бюджет и погоду, каталог маршрутов по России.",
+  "lang": "ru",
+  "id": "./",
+  "start_url": "./#/",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#F5F7F5",
+  "theme_color": "#F5F7F5",
+  "categories": [
+    "travel",
+    "lifestyle",
+    "navigation"
+  ],
+  "icons": [
+    {
+      "src": "icons/apple-touch-icon-v07.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Гоу? Подобрать маршрут",
+      "short_name": "Гоу?",
+      "url": "./#/go",
+      "icons": [
+        {
+          "src": "icons/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Избранное",
+      "url": "./#/favs",
+      "icons": [
+        {
+          "src": "icons/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ]
+}
